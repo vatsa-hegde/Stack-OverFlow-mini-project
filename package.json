@@ -1,0 +1,31 @@
+{
+  "name": "stackoverflow",
+  "version": "1.0.0",
+  "description": "\"stack overflow mini project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilentSaint/Stack-overflow-mini-project.git"
+  },
+  "author": "Shreevatsa G hegde & Rakshith Gowda G",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SilentSaint/Stack-overflow-mini-project/issues"
+  },
+  "homepage": "https://github.com/SilentSaint/Stack-overflow-mini-project#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "lodash": "^4.17.20",
+    "md5": "^2.2.1",
+    "mongoose": "^5.7.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.1"
+  }
+}

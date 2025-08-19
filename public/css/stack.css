@@ -1,0 +1,186 @@
+.navbar-brand {
+  margin-left: 10px;
+  font-size: 2rem;
+
+}
+.nav-link{
+  font-size: 1.2rem;
+}
+.btn{
+  border-radius: 50em;
+}
+.container{
+  padding-top: 6rem;
+  padding-bottom:50px;
+}
+.questionTitle{
+  color : black;
+}
+.card{
+  
+  border-bottom: 1px solid white;
+  border-right: none;
+  border-top: none;
+}
+.userSearch{
+  margin-left: .5rem;
+}
+.userImage{
+  width: 20%;
+  float: left;
+  margin-right: 10px;
+}
+/* .stackUserImage{
+  width: 5%;
+  float : left;
+  margin-right : 20px;
+}
+.userImage2{
+  width: 40%;
+  float: left;
+  margin-right: 10px;
+} */
+/* css for footer */
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position: fixed;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #6C757D;
+}
+.inlineHeading{
+  display: inline;
+}
+.footer p {
+	margin-top: 15px;
+	font-size: 12px;
+  color: #fff;
+}
+
+.hero-text {
+	margin-bottom: 80px;
+}
+
+.hero-text h2 {
+	font-size: 5rem;
+	line-height: normal;
+	margin-bottom: 20px;
+  color: white;
+  margin-top: 30px;
+}
+
+.hero-text p {
+	font-size: 1.5rem;
+	line-height: 1.3;
+
+}
+
+.hero-image {
+	padding-top: 40px;
+}
+
+.content {
+	padding: 0 0 0 75px; /* 75px being the width of the thumbnail + how much space you want to put between it and your text */
+	position: relative; /* So the thumbnail is relative to this */
+}
+
+	.content img {
+    width : 4%;
+		left: 0;
+		position: absolute;
+		top: 0;
+	}
+
+
+
+.us {
+	width: 20%;
+	float :left;
+	padding-right: 10px;
+	
+
+
+}
+
+.qu {
+	width: 79%;
+	float: left;
+	margin-bottom: 70px;
+}
+
+#profile {
+	border-radius: 60px;
+	width : 70%;
+	height: 70%;
+}
+
+title {
+	font-family: 'Dancing Script', cursive;
+}
+
+
+body {
+	background-color: #333333;
+	color: white;
+}
+
+.card-body {
+	background-color: #333333;
+}
+
+.questionTitle {
+	color: white;
+}
+
+.mb-0{
+	color: white;
+}
+
+.jumbotron{
+	color: black;
+}
+
+#me {
+	color: white;
+}
+
+#me1 {
+	color: 	blueviolet;
+}
+
+.me{
+	color: white;
+}
+
+.ui.segment {
+	background-color: #333333;
+	
+	border-left: 1px solid white;
+	border-bottom: 1px solid white;
+
+}
+
+
+#image {
+	    /* padding: .25rem; */
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    width: 10%;
+    height: 50%;
+    border-right: 1px;
+}
+
+.m1 {
+
+ margin-left: 20px ;
+ border-left: 12px; 
+}
+
+
+

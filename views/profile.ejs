@@ -1,0 +1,21 @@
+<%- include("partials/stackHeader"); -%>
+			<div class="row">
+				<div class="col-xl-10 offset-xl-1">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="hero-text">
+								<h2><%= user.name%></h2>
+								<p style="color : #40424A"><strong>Alias : <%= user.username %></strong></p>
+								<p><%= user.description%></p>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<figure class="hero-image">
+								<img src="<%= user.image%>" width="70%" alt="5">
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+
+<%- include("partials/stackFooter"); -%>

@@ -1,0 +1,12 @@
+<%- include("partials/stackHeader",{user : currentuser}); -%>
+
+<div class="qu">
+            <%  tag.question.forEach(function(item){%>
+            <div class="card bg-light">
+        <div class="card-body">
+             <h4 class="card-title"><a class="questionTitle" href="/questionAnswer/<%= item._id %>" ><%= item.questionTitle %></a></h4>
+             <p class="card-text"><pre><%= item.questionDescription %></pre></p>
+  </div>
+        </div>
+       <%  })%>
+</div>

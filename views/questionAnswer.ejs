@@ -1,0 +1,60 @@
+<%- include("partials/stackHeader",{user : currentuser}); -%>
+
+<div class="qu">
+<h1 class="display-4"><%= title %></h1>
+<p><strong>Asked by : </strong><%=user.username%></p>
+<hr style="border-top: solid #F0EFEF 1px">
+<div class="ml-5">
+  <p style="white-space: pre-line"><%= body %></p>
+
+
+</div>
+<!-- <hr style="border-top: solid #F0EFEF 1px"> -->
+<br>
+<% if(answers.length !== 0){ %>
+  <h3 class="inlineHeading"><%= numberofAnswers %></h3>
+  <h3 class="inlineHeading"> Answers</h3>
+  <hr style="border-top: solid #F0EFEF 1px">
+<% } %>
+
+<% answers.forEach(function(answer){ %>
+  <div class="content">
+    <%= console.log(answer);%>
+    <div  >
+       <img id="image" src="<%= answer.user.image%>" alt="default User image" >
+
+    </div>
+    <div class="m1" >
+       <p style="white-space: pre-line"><%= answer.answerDescription %></p>
+    <p>Answered BY: <%= answer.user.name%></p>
+    <p>username: <%= answer.user.username%></p>
+      
+    </div>
+   
+   
+  </div>
+  <hr style="border-top: solid #F0EFEF 1px">
+<% });%>
+
+<% if (cuser.email !== user.email) { %>
+  <form action="/questionAnswer" method="post">
+    <div class="form-group">
+      <label for="post"><strong>Your Answer:</strong></label>
+      <input type="text" style="visibility : hidden"name="questionId" value="<%= questionId %>">
+      <textarea class="form-control" name="answerText" rows="8" cols="80" placeholder="your answer goes here"></textarea>
+      <small id="emailHelp" class="form-text text-muted">Be as descriptive as possible while answering.</small>
+    </div>
+    <button type="submit" name="button" class="btn btn-dark">Post your answer</button>
+  </form>
+<% } %>
+
+
+<% if(user.email == cuser.email) {%>
+<a class="btn btn-dark" href="/questionAnswer/<%=questionId %>/update">Update</a>
+<a class="btn btn-dark" href="/questionAnswer/<%=questionId %>/delete">Delete</a>
+
+<%}%>
+
+</div>
+
+<%- include("partials/stackFooter") -%>
